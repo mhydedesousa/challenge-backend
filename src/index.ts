@@ -10,7 +10,7 @@ import { DictionaryEntry, NumberToWordDTO } from "./interfaces";
 dotenv.config({ path: ".env" });
 
 const app: Express = express();
-const port = config.PORT;
+const port = config.PORT || 8000;
 
 // request logger
 app.use((req: Request, _res: Response, next: NextFunction) => {
