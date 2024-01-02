@@ -14,7 +14,7 @@
 
 # 2. run 'npm install' to install node modules
 
-# 3. run 'npm run build'
+# 3. run 'npm run build'. (make sure to run npm run build after making any changes before running npm start to make sure that you use a new build)
 
 # 4. run 'npm start' and then call endpoints as needed
 

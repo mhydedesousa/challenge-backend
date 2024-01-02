@@ -25,7 +25,6 @@ app.use(
   })
 );
 // will be using JSON payloads
-// app.use(bodyParser.json());
 app.use(express.json());
 
 // start the listener
@@ -44,7 +43,6 @@ app.get(
       if (!word || word.replace(/\s/g, "").length === 0) {
         throw new BadRequest("Please provide a word");
       }
-      console.log(word);
 
       let wordInfoResponse = null;
       try {
@@ -122,7 +120,6 @@ app.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body = req.body as NumberToWordDTO;
-      console.log(body);
       const isSingleDigit = (num: any) => {
         return (
           typeof num === "number" &&
